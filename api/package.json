@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "PORT=4000 node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "PORT=4000 node ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
     "lowdb": "^1.0.0"
+  },
+  "engines": {
+    "node": "8.4.0"
   }
 }

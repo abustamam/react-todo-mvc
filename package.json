@@ -4,12 +4,15 @@
   "description": "Todo MVC for react course",
   "main": "index.js",
   "scripts": {
-    "prod": "NODE_ENV=production PORT=3000 node ./webserver/index.js",
     "build": "./build.sh",
-    "start": "node ./webserver/index.js",
-    "postinstall": "./install.sh",
+    "dev": "node ./webserver/index.js",
+    "start": "NODE_ENV=production PORT=3000 node ./webserver/index.js",
+    "postinstall": "./install.sh && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "8.4.0"
+  }
 }
