@@ -7,6 +7,7 @@
     "prod": "NODE_ENV=production PORT=3000 node ./webserver/index.js",
     "build": "./build.sh",
     "start": "node ./webserver/index.js",
+    "postinstall": "./install.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
