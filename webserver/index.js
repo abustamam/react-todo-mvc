@@ -1,7 +1,7 @@
 const path = require('path')
 const express = require('express')
 
-const start = require('./../api')
+const start = require('./../api/index')
 
 const port = process.env.PORT
 

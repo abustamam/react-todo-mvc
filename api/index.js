@@ -17,8 +17,9 @@ db
   })
   .write()
 
-const start = async ({ host, port }) => {
+const start = async ({ port }) => {
   app.get('/api/todos', (req, res) => {
+    console.log('hello')
     res.json(db.get('todos'))
   })
   app.post('/api/todos', (req, res) => {
@@ -31,7 +32,7 @@ const start = async ({ host, port }) => {
   app.listen(port, () => {
     console.log('App listening on port', port)
   })
-  return app
+  return await app
 }
 
 module.exports = start
