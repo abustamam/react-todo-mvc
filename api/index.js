@@ -19,7 +19,6 @@ db
 
 const start = async ({ port }) => {
   app.get('/api/todos', (req, res) => {
-    console.log('hello')
     res.json(db.get('todos'))
   })
   app.post('/api/todos', (req, res) => {
