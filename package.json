@@ -1,0 +1,14 @@
+{
+  "name": "todo-mvc-react",
+  "version": "1.0.0",
+  "description": "Todo MVC for react course",
+  "main": "index.js",
+  "scripts": {
+    "prod": "NODE_ENV=production PORT=3000 node ./webserver/index.js",
+    "build": "./build.sh",
+    "start": "node ./webserver/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
