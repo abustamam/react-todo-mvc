@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "./build.sh",
-    "dev": "node ./webserver/index.js",
-    "start": "NODE_ENV=production PORT=3000 node ./webserver/index.js",
+    "dev": "PORT=4000 node ./webserver/index.js",
+    "prod": "node ./webserver/index.js",
     "postinstall": "./install.sh && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
