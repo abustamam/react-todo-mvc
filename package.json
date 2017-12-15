@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "Todo MVC for react course",
   "main": "index.js",
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:4000"
+    }
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17"
+  },
   "scripts": {
-    "build": "./build.sh",
-    "dev": "PORT=4000 node ./webserver/index.js",
-    "prod": "node ./webserver/index.js",
-    "postinstall": "./install.sh && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "server": "json-server db.json --port 4000 --routes routes.json"
   },
   "author": "",
   "license": "ISC",
